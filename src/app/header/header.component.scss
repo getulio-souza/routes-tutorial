@@ -1,0 +1,89 @@
+.header{
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+}
+
+
+
+/* LOGO */
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#4f46e5;
+}
+
+
+
+/* MENU */
+
+.menu{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+position:relative;
+}
+
+/* underline animation */
+
+.menu a::after{
+content:"";
+position:absolute;
+width:0;
+height:2px;
+background:#4f46e5;
+left:0;
+bottom:-5px;
+transition:0.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+
+
+/* BUTTONS */
+
+.actions{
+display:flex;
+gap:15px;
+}
+
+.btn-login{
+background:transparent;
+border:1px solid #ddd;
+padding:8px 16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.btn-start{
+background:#4f46e5;
+color:white;
+border:none;
+padding:8px 16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.btn-start:hover{
+background:#4338ca;
+}

@@ -1,6 +1,23 @@
-<section style="display: flex; justify-content: space-between; border: 1px solid black; padding: 20px;">
-    <div (click)="goToHome()">home</div>
-    <div (click)="goToCourses()">Courses</div>
-    <div (click)="goToAbout()">About</div>
+<header class="header">
 
-</section>
+  <nav class="navbar">
+
+    <div class="logo">
+      DevCursos
+    </div>
+
+    <ul class="menu">
+      <li (click)="goToHome()">Home</li>
+      <li (click)="goToCourses()">Cursos</li>
+      <li (click)="goToAbout()">Sobre</li>
+      <li (click)="goToContact()">Contato</li>
+    </ul>
+
+    <div class="actions">
+      <button class="btn-login">Login</button>
+      <button class="btn-start">Começar</button>
+    </div>
+
+  </nav>
+
+</header>
